@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main id="card">
+    <div class="card-perc">
+      <h3 class="card-head-text">Your Result</h3>
+      <div class="card-score-box">
+        <h1 class="card-score">76</h1>
+        <span class="card-total"> of 100</span>
+      </div>
+      <div class="card-comment">
+        <h2 class="card-performance">Great</h2>
+        <p class="card-compare">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </div>
+    <div class="card-summary">
+      <h3>Summary</h3>
+     <div id="list">
+      <div class="card-topic">
+         <div>
+           <img src="assets/images/icon-reaction.svg" alt="">
+           <h3>Reaction</h3>
+         </div>
+         <p class="total"><span class="marks">80</span> / 100</p>   
+      </div>
+
+      <div class="card-topic">
+        <div>
+          <img src="assets/images/icon-memory.svg" alt="">
+          <h3>Memory</h3>
+        </div>
+        <p class="total"><span class="marks">92</span> / 100</p>   
+      </div>
+
+      <div class="card-topic">
+        <div>
+          <img src="assets/images/icon-verbal.svg" alt="">
+          <h3>Verbal</h3>
+        </div>
+        <p class="total"><span class="marks">61</span> / 100</p>   
+      </div>
+
+      <div class="card-topic">
+       <div>
+        <img src="assets/images/icon-visual.svg" alt="">
+        <h3> Visual </h3>
+       </div>
+        <p class="total"><span class="marks">72</span> / 100</p>   
+      </div>
+    </div>
+      <button class="card-summary__button">Continue</button>
+    </div>
+    
+  </main>
+
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Aswinth</a>.
+  </footer>
+</body>
+
+</html>
