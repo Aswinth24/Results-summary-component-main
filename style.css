@@ -26,7 +26,7 @@
 body{
    background-color:rgb(250, 250, 250);;
    width:100%;
-   height: 100vh;
+   min-height: 100vh;
    font-family: 'Hanken Grotesk', sans-serif;
    display: flex;
    justify-content: center;
@@ -108,7 +108,7 @@ body{
 
 }
 .card-topic{
-    width:91%;
+    width:250px;
     height:50px;
     border-radius:10px;
     display: flex;
@@ -148,6 +148,11 @@ body{
 .card-topic:nth-child(4) h3{
     color:var(--Violet-blue);
 }
+.card-summary>h3{
+    font-size: 1.4rem;
+    width:100%;
+     padding:0 22px
+   }
 .card-summary__button{
     border:0;
     font-size: 18px;
@@ -171,9 +176,88 @@ body{
 }
 /*footer*/
 .attribution{
-    font-size: 15px;
+    font-size: 18px;
     width: 100%;
     position: fixed;
     bottom: 0;
-    text-align: center;
+}
+@media screen and (max-width:650px) 
+{
+    #card
+    { 
+        position: relative;
+        min-height: 100vh;
+        max-width:650px; 
+        border-top-right-radius:0;
+        border-top-left-radius: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 45% 50%;
+    }
+    .card-perc{
+        padding: 20px 40px;
+         gap:25px;
+    }
+    .card-head-text{
+        font-size: 1.5rem;
+    }
+    .card-score-box{
+        width:160px;
+        height: 160px;
+    }
+    .card-score{
+        font-size: 3.5rem;
+    }
+    .card-total{
+        font-size: 1.1rem;
+    }
+    .card-performance{
+        font-size: 1.5rem;
+    }
+    .card-compare{
+        font-size: 1rem;
+    }
+    #list{
+        gap:15px;    
+    }
+    .card-topic>div{
+        display: flex;
+        gap:18px;
+    }  
+}
+@media screen and (max-width:280px) 
+{
+    .card-perc{
+        padding: 10px 30px;
+         gap:25px;
+    }
+    .card-score-box{
+        width:140px;
+        height: 140px;
+    }
+    .card-score{
+        font-size: 3rem;
+    }
+    .card-total{
+        font-size: 1rem;
+    }
+    .card-performance{
+        font-size: 1rem;
+    }
+    .card-compare{
+        font-size: 0.9rem;
+    }
+    .card-topic{
+        width:200px;
+        font-size: 15px;
+        height: 40px;
+    }
+    .card-summary__button
+    {
+        width:200px;
+        height:45px;
+        padding: 10px;
+    }
+    .attribution{
+        font-size:12px;
+    }
 }
